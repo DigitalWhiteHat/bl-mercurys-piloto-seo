@@ -52,6 +52,12 @@
   .byline{font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 16px}
   .byline b{color:var(--black)}
 
+  /* Lo que se pidió */
+  .pedido{margin-top:34px;border-top:4px solid var(--black);padding-top:14px;display:grid;gap:14px}
+  .pedido blockquote{margin:0;font-family:var(--f-display);font-size:clamp(17px,2.1vw,21px);line-height:1.38;font-weight:600;color:var(--black);border-left:5px solid var(--yellow);padding-left:14px;max-width:72ch}
+  .pedido .tri>div{border-top:2px solid var(--black)}
+  .pedido a{font-weight:600}
+
   /* Clave de lectura */
   .clave{margin-top:40px;border:2px solid var(--black);padding:18px 20px 20px;display:grid;gap:10px;background:var(--faint)}
   .clave-dek{font-size:16px;color:var(--ink2);max-width:74ch}
@@ -203,7 +209,7 @@
 </style>
 </head>
 <body>
-<div class="topbar"><div class="inner"><span>Área de Audiencias y SEO · Informe interno</span><span>Reunión equipo Mercury · 18 sep 2026</span></div></div>
+<div class="topbar"><div class="inner"><span>Área de Audiencias y SEO · Informe interno</span><span>Piloto en curso · arrancó el 21 sep 2026 · corte 5 oct</span></div></div>
 <div class="ticker" role="region" aria-label="Indicadores clave de los Mercurys">
   <ul class="inner">
     <li><b>Peso del cable</b><span class="v">46,5 %</span><em>de lo que publicamos en español</em></li>
@@ -249,6 +255,29 @@
     <div><b>Puntos</b><p>Cuando algo sube «+6,5 puntos» significa que pasa de 24 a 30 de cada 100, no que haya aumentado un 6,5 %. En términos relativos, ese cambio es un 27 % más.</p></div>
   </div>
   <p class="note">Base de casi todas las cifras: <b>16.512 Mercurys en español</b> publicados entre el 1 de julio y el 15 de septiembre de 2026, del informe interno de subtipos (blend MySQL-BL + GA4). Cuando una cifra viene de otra fuente —el rastreo del HTML de 2.483 notas, Search Console o GA4 por mes— se dice en el pie de esa tabla o gráfica.</p>
+</div>
+
+<div class="pedido">
+  <span class="label">Lo que se pidió y dónde está respondido</span>
+  <blockquote>«Del lado de Edwin Lozada: todo lo enfocado a SEO → mejores entidades, mejores prácticas SEO para Mercurys (solo titulación y H2). Cinco acciones estratégicas que podamos medir en el tiempo, periodo de un mes.»</blockquote>
+  <div class="tri">
+    <div>
+      <h3>Mejores entidades</h3>
+      <p>Qué entidades aciertan y cuáles no, con la prueba de si aguantan mes a mes, en la <a href="#ranking">Parte 02</a>. La lista operativa con meta de URLs por entidad, en <a href="#entidades">la Parte 03</a>.</p>
+      <p class="rule">IA 1,64× · Anthropic 3,08× · inflación 1,61× · aranceles 0,49×</p>
+    </div>
+    <div>
+      <h3>Titulación</h3>
+      <p>Qué rasgos del titular separan a los Mercurys que funcionan, qué cambió desde que el SEO entra a titular y cuánto vale llevarlo a toda la producción, en <a href="#impacto">la Parte 02</a>. La regla, en <a href="#propuesta">la Parte 03</a>.</p>
+      <p class="rule">Cifra 1,27× · % 1,57× · institución, no personaje</p>
+    </div>
+    <div>
+      <h3>H2</h3>
+      <p>El estado real del H2 en el cable y por qué es la prueba más limpia del piloto, en <a href="#propuesta">la Parte 03</a>; qué pregunta la gente y qué H2 lo respondería, en <a href="#h2">la Parte 02</a>.</p>
+      <p class="rule">86,5 % de los Mercurys sin ningún H2</p>
+    </div>
+  </div>
+  <p class="note">Las <b>cinco acciones SEO medibles</b> —entidades, titular, H2, tecnología con ángulo de usuario y titulación asistida con registro— están en <a href="#acciones">la Parte 03</a>, cada una con su línea base, su meta en URLs y la fecha en que se revisa. Las acciones 6 y 7 (horarios y nota de servicio) quedan fuera del alcance «solo titulación y H2» y van marcadas como tales.</p>
 </div>
 
 <div class="parte">
@@ -826,8 +855,8 @@
   </div>
   <div class="timeline">
     <div class="step"><span class="d">18 ago → 14 sep</span><h3>Línea base</h3><p>615 Mercurys con 7 días de datos.</p></div>
-    <div class="step"><span class="d">21 sep</span><h3>Arranque</h3><p>Lista de entidades, guía de titulación y hoja de registro en uso.</p></div>
-    <div class="step"><span class="d">5 oct</span><h3>Corte intermedio</h3><p>URLs por entidad, titulares con región y cifra, H2 aplicados y notas revisadas.</p></div>
+    <div class="step"><span class="d">21 sep · hecho</span><h3>Arranque</h3><p>Lista de entidades, guía de titulación y hoja de registro en uso desde el lunes 21.</p></div>
+    <div class="step"><span class="d">5 oct · próximo</span><h3>Corte intermedio</h3><p>URLs por entidad, titulares con región y cifra, H2 aplicados y notas revisadas.</p></div>
     <div class="step"><span class="d">18 oct</span><h3>Cierre</h3><p>Último día de publicación que cuenta para el piloto.</p></div>
     <div class="step"><span class="d">27 oct</span><h3>Lectura final</h3><p>Resultado por acción frente a la línea base, con datos al 25 de octubre.</p></div>
   </div>
